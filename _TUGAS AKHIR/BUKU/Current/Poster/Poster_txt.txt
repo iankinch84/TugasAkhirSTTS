@@ -1,0 +1,27 @@
+Introduction
+
+	- Denial of service attacks are mounted by professionals using Bot nets of tens of thousands of compromised machines. To circumvent detection, attackers are increasingly moving away from bandwidth floods to attacks that mimic the Web browsing behaviour of a large number of clients. Based on the issue, Kill Bots has been made, a kernel extension to protect Web servers against DDoS attacks that masquerade as flash crowds.
+	
+Objective
+	- This research has a objective which is find the true process of the Kill Bots authentication process that separate whether it is a legitimate user or a malicious zombie. 
+	
+Methods
+	- Bloom Filter
+		A filter which can reduce a process time but the other hand has a powerful search index process.
+		
+	- Two Phase Process
+		There are two phase on Kill Bots authentication system, NORMAL and SUSPECTED mode.
+		
+	- Graphical Test
+		Using a Turning test to define, is it a legitimate user or a malicious zombie.
+		
+
+Result
+	- Kill Bots has more responsive time when a new request come in the middle of attack wave.
+	- When the default server gives feed back a huge not responding status over the client, Kill Bots shows less
+	- In normal situation, default server shows more responsive time than Kill Bots
+	
+Conclusion
+	- When server in the middle of attack wave, Kill Bots can protect server good enough, and with Kill Bots, server server more efficient and responsive during attack.
+	- There must be a front line authentication to make Kill Bots even better, it is come up because of when the server is cooling down or in normal situation, Kill Bots always put the authentication process on guard.
+

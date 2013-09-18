@@ -1,0 +1,127 @@
+Distributed Denial of Service atau DDoS adalah salah satu serangan yang mengancam sekuritas dari server. Serangan tersebut mempunyai jenis yang beraneka ragam, contohnya adalah Flash Crowd. Serangan Flash Crowd adalah serangan yang mengandalkan banyaknya agent untuk mengakses server yang ingin diserang dan tidak adanya eksploitasi dari segi protokol maupun dari segi port yang ada. Flash Crowd mempunyai perilaku hampir sama seperti pengguna pada umumnya, dengan 
+demikian penanganannya harus berdasarkan perilaku dari pengguna yang sebenarnya.
+
+Distributed Denial of Service or DDoS is an attack that exploit the internet security. DDoS has a lot if type of attack, Flash Crowd is one of them. Flash Crowd is a type of attack that rely on many exploited computer to access a server as a victim. The attack doesn not exploit the existing server protocol or port, but Flash Crowd attacks mimic a legitimate user. Because of that reason, to prevent the attack, defending the Flash Crowd must based on legitimate user's behaviour
+
+---
+• Mempercepat proses server pada saat 
+  server diserang
+• Dapat mengenali perilaku dari zombie
+• Memberikan rasa responsif saat server diakses
+• Mengetahui tentang proses regulasi Apache
+• Mengetahui tentang pengembangan Apache    
+  Module
+
+• Make server process faster when attacked
+• Can recognize the behaviour of zombie
+• Give responsive sense when accessed
+• Learn about the Apache regulation process 
+• Learn about Apache module development
+
+---
+DDoS atau Distributed Denial of 
+Service adalah serangan yang 
+dilakukan oleh lebih dari 
+satu buah komputer. 
+Terdapat dua peran 
+vital. Pertama ber-
+tugas sebagai otak 
+serangan dan yang 
+kedua sebagai pela-
+ku serangan.
+
+DDoS or Distributed Denial of Ser-
+vice is an attack carried out 
+by more than one computer. 
+There are two vital role. 
+First has job as the bra-
+in, and the second as 
+the worker.
+
+---
+Metode utama pada Kill Bots adalah Server Transition Status, di mana poin yang  
+dijadikan acuan adalah load server. Load server adalah persentase dari tingkat 
+kesibukan dari server.
+
+The Kill Bots main method is Server Transition Status, where load server is
+the main references. Load server is the percentage of the server active
+thread or process.
+
+---
+*Angka 600.000 adalah batas antara server merespon atau tidak.
+
+*600.000 is the threshold whether the request dead or alive.
+
+---
+*Bagian tengah adalah array filter, atasvmerupakan data yang akan dimasukkan dan bawah 
+adalah data yang dicari.
+
+*The middle section is an filter array, top is the data which will be executed, and below
+is data sought.
+
+---
+Bloom filter adalah sebuah struktur data yang menitik beratkan pada proses hashing. Struktur data ini bersifatprobabilitas. Jika data yang disimpan terlalu banyak, ada 
+kemungkinan kembalian dari struktur data tersebut tidak tepat. Proses hashingnya dilakukan oleh satu atau lebih hash function.
+
+Bloom filter is a data structure that focuses on the hashing process. This data structure is a probabilistic data structure type. If too much data stored, there will
+be chance that the feed back is not right. The hashing process is done by one or two hash function.
+
+---
+Respon server standar lebih lambat ketika
+ada serangan, bahkan sampai tidak merespon.
+
+Respon Kill Bots lebih cepat dan jumlah request
+yang tidak direspon lebih kecil.
+
+Mempunyai latency yang lebih tinggi dari pada 
+pengaturan standar, dikarenakan request harus 
+melalui proses autentikasi.
+
+Terjadinya pelepasan alokasi data dari pihak
+Apache oleh MPM, sehingga beberapa data yang
+bersifat dinamik hilang.
+
+
+The default server respond time is slower,
+even has no feed back.
+
+Kill Bots Respond time is faster and has
+a slight chance to return a fail connection.
+
+The latency is higher, because of the
+authentication process insde.
+
+Sometime Apache release all unnecessary
+memory by MPM, so some the dynamic data
+is missing.
+
+---
+Integrasi modul-modul Apache membuat
+pengembangannya lebih mudah dipelajari.
+
+Multi Processing Module (MPM) mempercepat
+dan merapikan kinerja setiap modul Apache.
+
+Rutin pelepasan alokasi pool oleh MPM membuat
+pengalokasian data secara dinamik menjadi sukar.
+
+Perbedaan antara zombie dan pengguna yang 
+sah dapat dilihat dari penanganan mereka terhadap tes yang diberikan.
+
+Data yang statik dapat dialokasikan ke arah  configuration pool, di mana proses pengalokasiannya terjadi pada proses start-up server.
+
+
+The module integrated makes Apache
+module development is easy to learn.
+
+Multi Processing Module (MPM) make Apache
+run faster and tidy up the process flow.
+
+Releasing the memory routine by MPM makes
+process to allocate the data harder.
+
+Differences whether zombie and the legitimate 
+user is based on their behaviour to solve the test.
+
+Static data can be allocated in the configuration pool,
+where the allocation process is executed during server start-up.

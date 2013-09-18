@@ -1,0 +1,66 @@
+Analysis of Kill Bots Process in Defending The Attack of DDOS Using Bloom Filter
+
+Analisa Proses Kill Bots dalam Mempertahankan dari Serangan Distributed Denial of Service dengan Menggunakan Struktur Data Bloom Filter
+--
+Server dengan tingkat pengaturan standar 
+mempunyai respon yang lebih lambat ketika 
+penyerangan berlangsung, bahkan sampai tidak 
+memberikan respon apapun.
+
+Respon server standar lebih lambat ketika
+ada serangan, bahkan sampai tidak merespon
+
+--
+Kill Bots mempunyai respon yang lebih cepat. 
+Meski beberapa kali tidak dapat merespon request 
+yang masuk, tetapi jumlahnya tidaklah sebanyak 
+server dengan pengaturan standar.
+
+Respon Kill Bots lebih cepat dan jumlah request
+yang tidak direspon lebih kecil
+
+--
+Mempunyai latency yang lebih tinggi dari pada 
+pengaturan standar, dikarenakan harusnya 
+melewati proses autentikasi.
+
+--
+Apache dengan mengandalkan keintegrasian 
+modul-modulnya membuat pengembangannya   
+lebih mudah untuk dipelajari.
+
+Integrasi modul-modul Apache membuat
+pengembangannya lebih mudah dipelajari
+
+--
+Metode Multi Processing Module (MPM) yang 
+dipunyai Apache membuat kinerja Apache lebih 
+teratur dan lebih cepat karena pada setiap 
+tahap dan setiap tingkatan yang sama akan 
+dikerjakan secara bersamaan.
+
+Multi Processing Module (MPM) mempercepat
+dan merapikan kinerja setiap modul Apache
+
+--
+Pengalokasian data secara dinamik pada Apache 
+Module tidaklah mudah, karena MPM mempunyai 
+rutin proses melepaskan semua pool alokasi yang 
+ada pada Apache secara berkala.
+
+Rutin pelepasan alokasi pool oleh MPM membuat
+pengalokasian secara dinamik menjadi sukar
+
+--
+Pembedaan antara zombie dan pengguna yang 
+sah dapat dilihat dari penanganan mereka 
+terhadap tes yang diberikan.
+
+Perbedaan antara zombie dan pengguna yang 
+sah dapat dilihat dari penanganan mereka 
+terhadap tes yang diberikan.
+
+--
+Terjadinya pelepasan alokasi data dari pihak
+Apache oleh MPM, sehingga beberapa data yang
+bersifat dinamik hilang.

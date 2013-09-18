@@ -1,0 +1,10 @@
+Installation Notes Net Tools 5.x
+--------------------------------
+
+1) All previous versions of NetTools should be uninstalled before continuing with the installation.
+
+2) Net Tools 5.0.70 requires the Microsoft .NET Framework. If you're not sure goto Help->Check if .NET Framework is installed.
+
+3) Run Setup.exe.
+
+For more info, contact ahmadi@pandora.be.

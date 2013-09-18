@@ -1,0 +1,16 @@
+Instructions for statically compiling mod_limitipconn into httpd:
+
+tar xavf httpd-2.4.2.tar.bz2
+tar xavf mod_limitipconn-0.24.tar.bz2
+cd httpd-2.4.2
+./configure --with-module=aaa:../mod_limitipconn-0.24/mod_limitipconn.c
+make
+make install
+
+-----------------------------------------------------------------------
+
+Instructions for building as a Dynamic Shared Object (DSO):
+
+tar xavf mod_limitipconn-0.24.tar.bz2
+cd mod_limitipconn-0.24
+make install

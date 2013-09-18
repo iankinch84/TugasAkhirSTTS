@@ -1,0 +1,20 @@
+1. judul diganti bahasa inggris
+2. background : kurang isi, ditambah tentang sudut padang dari sisi apache
+3. objective : ditambah tentang apachenya bagaimana bikin di apache-nya :3
+4. harus bisa menjelaskan kenapa menggunakan server 1. karena kebanyakan sekarang sudah menjadi 2. 
+5. distributed denial of service ditaruh setelah what is denial of services
+6. penjelasan apache web server e ditambah
+7. apache develop ditambai cara e mendevelop modul nya
+8. penjelasan tentang bloomnya di tambahi lagi.
+9. bloom the application -> ganti warnanya... 
+10. kill-bots ditambahi nek seandainya tidak ada kill-bots apa yang terjadi, pengaruhnya apa
+11. beri keterangan kapan mengisi IP table zombie... terserah mau diletakan sebelum / sesudah architecture
+12. captcha kalau bisa diganti dengan gambar. karena text gampang dipecahkan.
+13. result system testing (1)-> ada yang harus sampe berakhir (harus menujukkan yang sampai servernya mati) harus bisa menujukan walau pun latency e beda e dikit tpi ttp unggul yang pake mod killbots
+14. result system testing(2) -> sampai salah satu sampai tidak mendapat respon, harus bisa menunjukan sampai ada hasilnya, 
+                 |
+legitimate user  |
+                 |_______________________
+                      zombie request
+15. result system testing(3) -> yang diagram kiri tida usah ditampilkan, yang perlu yang dari zombie yang berhasil di arahkan ke mumble atau yang ke refuse berapa persen
+16. conclusion -> persenan yang berhasil itu perlu ditunjukan

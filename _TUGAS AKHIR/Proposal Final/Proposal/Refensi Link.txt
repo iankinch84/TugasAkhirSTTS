@@ -1,0 +1,2 @@
+http://en.wikipedia.org/wiki/Bloom_filter
+http://www.i-programmer.info/programming/theory/2404-the-bloom-filter.html?start=1

@@ -1,0 +1,1 @@
+Tujuan dari tugas akhir ini adalah untuk menganalisa kerja dari sistem Kill Bots yang digunakan untuk mengoptimisasi kinerja web server dengan cara mengidentifikasi dan mengurangi serangan-serangan DoS (Denial of Service) yang masuk pada web server.
