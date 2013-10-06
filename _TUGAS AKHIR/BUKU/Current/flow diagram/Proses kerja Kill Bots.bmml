@@ -105,5 +105,25 @@
         <borderColor>16777215</borderColor>
       </controlProperties>
     </control>
+    <control controlID="16" controlTypeID="com.balsamiq.mockups::Label" x="559" y="369" w="-1" h="-1" measuredW="32" measuredH="21" zOrder="16" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>YES</text>
+      </controlProperties>
+    </control>
+    <control controlID="17" controlTypeID="com.balsamiq.mockups::Label" x="633" y="275" w="-1" h="-1" measuredW="24" measuredH="21" zOrder="17" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>NO</text>
+      </controlProperties>
+    </control>
+    <control controlID="18" controlTypeID="com.balsamiq.mockups::Label" x="976" y="369" w="-1" h="-1" measuredW="32" measuredH="21" zOrder="18" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>YES</text>
+      </controlProperties>
+    </control>
+    <control controlID="19" controlTypeID="com.balsamiq.mockups::Label" x="1050" y="275" w="-1" h="-1" measuredW="24" measuredH="21" zOrder="19" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>NO</text>
+      </controlProperties>
+    </control>
   </controls>
 </mockup>

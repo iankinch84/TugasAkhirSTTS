@@ -1,12 +1,12 @@
-1. judul diganti bahasa inggris
-2. background : kurang isi, ditambah tentang sudut padang dari sisi apache
-3. objective : ditambah tentang apachenya bagaimana bikin di apache-nya :3
-4. harus bisa menjelaskan kenapa menggunakan server 1. karena kebanyakan sekarang sudah menjadi 2. 
-5. distributed denial of service ditaruh setelah what is denial of services
-6. penjelasan apache web server e ditambah
-7. apache develop ditambai cara e mendevelop modul nya
-8. penjelasan tentang bloomnya di tambahi lagi.
-9. bloom the application -> ganti warnanya... 
+1. judul diganti bahasa inggris [v]
+2. background : kurang isi, ditambah tentang sudut padang dari sisi apache [v]
+3. objective : ditambah tentang apachenya bagaimana bikin di apache-nya :3 [v]
+4. harus bisa menjelaskan kenapa menggunakan server 1. karena kebanyakan sekarang sudah menjadi 2. [v]
+5. distributed denial of service ditaruh setelah what is denial of services [v]
+6. penjelasan apache web server e ditambah [v]
+7. apache develop ditambai cara e mendevelop modul nya [v]
+8. penjelasan tentang bloomnya di tambahi lagi. [v]
+9. bloom the application -> ganti warnanya... [v]
 10. kill-bots ditambahi nek seandainya tidak ada kill-bots apa yang terjadi, pengaruhnya apa
 11. beri keterangan kapan mengisi IP table zombie... terserah mau diletakan sebelum / sesudah architecture
 12. captcha kalau bisa diganti dengan gambar. karena text gampang dipecahkan.
