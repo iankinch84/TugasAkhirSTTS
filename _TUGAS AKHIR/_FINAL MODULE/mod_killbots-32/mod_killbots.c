@@ -122,11 +122,22 @@ void *create_puzzle(request_rec *r, char *puzzle_id){
     char *xtoken = apr_psprintf(r->pool, "<input type=\"hidden\" name=\"token\" value=\"%s\"/>", 
                                                                         new_token(puzzle_id, r, KEY));
     char *puzzle_text = apr_table_get(question_puzzle_tab, puzzle_id);
-    char *xpuzzle = apr_psprintf(r->pool, "<h2>= %s =</h2>", puzzle_text);
-    
+    char *js0 = apr_psprintf(r->pool, 
+        "<script language=\"javascript\" type=\"text/javascript\" src=\"http://%s/jquery.js\"></script>", r->hostname);
+    char *js1 = apr_psprintf(r->pool, 
+        "<script language=\"javascript\" type=\"text/javascript\" src=\"http://%s/index.js\"></script>", r->hostname);
+    char *js2 = apr_psprintf(r->pool, 
+        "<script language=\"javascript\" type=\"text/javascript\">$(document).ready(function(){ $(\"#container\").html(generateCaptcha(\"%s\")) });</script>", 
+        puzzle_text);
+
     ap_set_content_type(r, "text/html;charset=ascii") ;
     ap_rputs("<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01//EN\">\n", r) ;
     ap_rputs("<html>", r);
+    ap_rputs("<head>", r);
+    ap_rputs(js0, r);
+    ap_rputs(js1, r);
+    ap_rputs(js2, r);
+    ap_rputs("</head>", r);
     ap_rputs("<body>", r);
     ap_rputs("<form action=\"#\" method=\"get\" style=\"text-align:center\">", r);
     ap_rputs("<h2>Our Website is Experiencing Unusually High Load.</h2>", r);
@@ -135,7 +146,10 @@ void *create_puzzle(request_rec *r, char *puzzle_id){
     ap_rputs("<input type=\"text\" name=\"answer\" />", r);
     ap_rputs(xtoken, r);    
     ap_rputs("<input type=\"submit\" name=\"submit\" /><br/>", r);
-    ap_rputs(xpuzzle, r);
+    ap_rputs("<br/>", r);
+    ap_rputs("<div id=\"container\" style=\"font-family: 'courier new'; font-size: 5pt; line-height: 80%;\">", r);        
+    ap_rputs("</div>", r);
+    ap_rputs("<br/>", r);
     ap_rputs("</form>", r);
     ap_rputs("</body>", r);
     ap_rputs("</html>", r);
